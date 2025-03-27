@@ -3,7 +3,7 @@ services:
     name: django-app
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn blog_project.wsgi:application
+    startCommand: gunicorn miniblog.wsgi:application
     envVars:
       - key: DJANGO_SECRET_KEY
         generateValue: true
